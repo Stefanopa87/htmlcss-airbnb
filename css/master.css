@@ -5,13 +5,15 @@
   }
 
 .box{
-  width: 100%;
+  width: calc(100% -30px);
   height: 550px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   position: relative;
   z-index: 0;
   background-position: center;
   background-size: cover;
+  margin: 15px;
+  border-radius: 30px;
 }
 
 .layover{
@@ -19,13 +21,14 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
+  border-radius: 30px;
 
 }
 
 .citta{
   font-family: 'Potta One', cursive;
   font-size: 50px;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   color: #fff;
   position: absolute;
   top: 50%;
@@ -34,17 +37,31 @@
   z-index: 2;
   text-shadow: 2px 2px #009dff;
 
+}
 
-  }
+.box:hover .layover{
+  background: none;
+}
 
-  #las-vegas{
-    background-image: url("../img/las-vegas.jpg");
-  }
+.box:hover .citta{
+  text-shadow: 5px 5px green;
+}
 
-  #miami{
-    background-image: url(../img/miami.jpg);
-  }
+.citta:hover{
+  color: red;
+  background-color: orange;
+  border-radius: 100px;
+  padding: 10px;
+}
 
-  #new-york{
-    background-image: url(../img/new-york.jpg);
-  }
+#las-vegas{
+  background-image: url("../img/las-vegas.jpg");
+}
+
+#miami{
+  background-image: url(../img/miami.jpg);
+}
+
+#new-york{
+  background-image: url(../img/new-york.jpg);
+}
