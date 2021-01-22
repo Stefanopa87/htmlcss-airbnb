@@ -4,6 +4,8 @@
   box-sizing: border-box;
   }
 
+  /* generale */
+
 .box{
   width: calc(100% -30px);
   height: 550px;
@@ -22,7 +24,6 @@
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
   border-radius: 30px;
-
 }
 
 .citta{
@@ -36,8 +37,9 @@
   transform: translate(-50%, -50%);
   z-index: 2;
   text-shadow: 2px 2px #009dff;
-
 }
+
+/* movimenti */
 
 .box:hover .layover{
   background: none;
@@ -55,14 +57,16 @@
   cursor: pointer;
 }
 
+/* img città */
+
 #las-vegas{
   background-image: url("../img/las-vegas.jpg");
 }
 
 #miami{
-  background-image: url(../img/miami.jpg);
+  background-image: url("../img/miami.jpg");
 }
 
 #new-york{
-  background-image: url(../img/new-york.jpg);
+  background-image: url("../img/new-york.jpg");
 }
